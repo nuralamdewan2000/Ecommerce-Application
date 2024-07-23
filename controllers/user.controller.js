@@ -60,7 +60,7 @@ const updateProfile = async (req, res) => {
 
     await user.save();
     res.status(200).json({
-      username: user.username,
+      username: user.username, 
       email: user.email
     });
   } catch (err) {

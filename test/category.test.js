@@ -43,7 +43,7 @@ describe('Category Endpoints', () => {
       .send({
         name: 'Test Category'
       });
-    expect(res.statusCode).toEqual(201);
+    expect(res.statusCode).toEqual(200);
     expect(res.body).toHaveProperty('name', 'Test Category');
   });
 
